@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/*header*/
+header {
+  background-color: #7965fa;
+  /*background-color: linear-gradient(to top left #7965fa, #8287fd);*/
+}
+.header__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 0;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__logo img {
+  max-width: 150px;
+}
+.header__nav ul {
+  list-style: none;
+}
+.header__nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.header__nav-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.header__nav-link:focus .jump__container,
+.header__nav-link:hover .jump__container {
+  transform: rotate(0);
+  transition: 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.button {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+  background-color: #383838;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+header .button {
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: #383838bf;
+}
+
+main {
+  width: 100%;
+  background-color: #7965fa;
+  height: 30vh;
+}
+
+.jump {
+  top: -10px;
+  height: 9px;
+  left: 50%;
+  margin-left: -15px;
+  overflow: hidden;
+  position: absolute;
+  width: 30px;
+  display: none;
+}
+.jump__container {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 33px;
+  width: 33px;
+  margin-left: -16px;
+  -ms-transform: rotate(-160deg);
+  transform: rotate(-160deg);
+  transition: 0.2s cubic-bezier(0.895, 0.03, 0.6, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.jump__icon {
+  top: 0;
+  display: block;
+  height: 9px;
+  left: 50%;
+  margin-left: -11px;
+  position: absolute;
+  width: 24px;
+  stroke: currentColor;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  fill-rule: evenodd;
+  fill: none;
+  stroke-width: 2;
+}
+
+@media (min-width: 850px) {
+  .jump {
+    display: block;
+  }
+}
