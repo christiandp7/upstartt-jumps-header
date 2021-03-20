@@ -1,0 +1,23 @@
+{
+  "name": "upstartt-jumps-header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "start": "http-server ./public --port 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christiandp7/upstartt-jumps-header.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christiandp7/upstartt-jumps-header/issues"
+  },
+  "homepage": "https://github.com/christiandp7/upstartt-jumps-header#readme"
+}
